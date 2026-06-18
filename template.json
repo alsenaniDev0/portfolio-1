@@ -39,7 +39,7 @@
             "label": "الاسم الكامل",
             "type": "text",
             "required": true,
-            "defaultValue": "محمد السناني",
+            "defaultValue": "اكتب اسمك هنا",
             "placeholder": "مثال: محمد السناني",
             "maxLength": 70
         },
