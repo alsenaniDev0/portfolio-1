@@ -118,7 +118,11 @@
             </div>
 
             <div class="skills-card">
-                <p>{{skills}}</p>
+                <div class="skills-tags">
+                    {{#each skills}}
+                    <span>{{this}}</span>
+                    {{/each}}
+                </div>
             </div>
         </section>
 
@@ -133,35 +137,23 @@
 
             <div class="projects-grid">
 
-                <article class="project-card">
-                    <div class="project-number">01</div>
-                    <h3>{{projectOneTitle}}</h3>
-                    <p>{{projectOneDesc}}</p>
+                <div class="projects-grid">
 
-                    <a href="{{projectOneUrl}}" target="_top" rel="noopener noreferrer">
-                        مشاهدة المشروع
-                    </a>
-                </article>
+                    {{#each projects}}
+                    <article class="project-card">
+                        <div class="project-number">{{number}}</div>
 
-                <article class="project-card">
-                    <div class="project-number">02</div>
-                    <h3>{{projectTwoTitle}}</h3>
-                    <p>{{projectTwoDesc}}</p>
+                        <h3>{{title}}</h3>
 
-                    <a href="{{projectTwoUrl}}" target="_top" rel="noopener noreferrer">
-                        مشاهدة المشروع
-                    </a>
-                </article>
+                        <p>{{description}}</p>
 
-                <article class="project-card">
-                    <div class="project-number">03</div>
-                    <h3>{{projectThreeTitle}}</h3>
-                    <p>{{projectThreeDesc}}</p>
+                        <a href="{{url}}" target="_top" rel="noopener noreferrer">
+                            مشاهدة المشروع
+                        </a>
+                    </article>
+                    {{/each}}
 
-                    <a href="{{projectThreeUrl}}" target="_top" rel="noopener noreferrer">
-                        مشاهدة المشروع
-                    </a>
-                </article>
+                </div>
 
             </div>
         </section>

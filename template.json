@@ -97,86 +97,71 @@
         {
             "key": "skills",
             "label": "المهارات",
-            "type": "textarea",
+            "type": "list",
+            "listStyle": "tags",
             "required": true,
-            "defaultValue": "Angular • Firebase • TypeScript • HTML • CSS • UI/UX • REST APIs • GitHub • Responsive Design",
-            "placeholder": "مثال: Angular • Firebase • UI/UX",
-            "maxLength": 300
+            "minItems": 1,
+            "maxItems": 20,
+            "defaultValue": [
+                "Angular",
+                "Firebase",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "UI/UX"
+            ],
+            "placeholder": "مثال:\nAngular\nFirebase\nTypeScript"
         },
         {
-            "key": "projectOneTitle",
-            "label": "عنوان المشروع الأول",
-            "type": "text",
+            "key": "projects",
+            "label": "المشاريع",
+            "type": "repeater",
             "required": true,
-            "defaultValue": "منصة دعوات رقمية",
-            "maxLength": 80
-        },
-        {
-            "key": "projectOneDesc",
-            "label": "وصف المشروع الأول",
-            "type": "textarea",
-            "required": true,
-            "defaultValue": "منصة تتيح للمستخدم إنشاء دعوات وتهاني رقمية بتصاميم متحركة وروابط مشاركة مباشرة.",
-            "maxLength": 220
-        },
-        {
-            "key": "projectOneUrl",
-            "label": "رابط المشروع الأول",
-            "type": "text",
-            "inputType": "url",
-            "required": false,
-            "defaultValue": "#",
-            "placeholder": "https://example.com"
-        },
-        {
-            "key": "projectTwoTitle",
-            "label": "عنوان المشروع الثاني",
-            "type": "text",
-            "required": true,
-            "defaultValue": "لوحة تحكم إدارية",
-            "maxLength": 80
-        },
-        {
-            "key": "projectTwoDesc",
-            "label": "وصف المشروع الثاني",
-            "type": "textarea",
-            "required": true,
-            "defaultValue": "لوحة تحكم لإدارة المحتوى والقوالب والبيانات بطريقة سهلة ومنظمة.",
-            "maxLength": 220
-        },
-        {
-            "key": "projectTwoUrl",
-            "label": "رابط المشروع الثاني",
-            "type": "text",
-            "inputType": "url",
-            "required": false,
-            "defaultValue": "#",
-            "placeholder": "https://example.com"
-        },
-        {
-            "key": "projectThreeTitle",
-            "label": "عنوان المشروع الثالث",
-            "type": "text",
-            "required": true,
-            "defaultValue": "موقع شركة تعريفي",
-            "maxLength": 80
-        },
-        {
-            "key": "projectThreeDesc",
-            "label": "وصف المشروع الثالث",
-            "type": "textarea",
-            "required": true,
-            "defaultValue": "موقع تعريفي حديث يعرض خدمات الشركة، المميزات، وطرق التواصل بشكل احترافي.",
-            "maxLength": 220
-        },
-        {
-            "key": "projectThreeUrl",
-            "label": "رابط المشروع الثالث",
-            "type": "text",
-            "inputType": "url",
-            "required": false,
-            "defaultValue": "#",
-            "placeholder": "https://example.com"
+            "minItems": 1,
+            "maxItems": 6,
+            "hint": "أضف مشاريعك السابقة، ويمكنك إضافة أكثر من مشروع.",
+            "defaultValue": [
+                {
+                    "title": "منصة دعوات رقمية",
+                    "description": "منصة تتيح للمستخدم إنشاء دعوات وتهاني رقمية بتصاميم متحركة وروابط مشاركة مباشرة.",
+                    "url": "#"
+                },
+                {
+                    "title": "لوحة تحكم إدارية",
+                    "description": "لوحة تحكم لإدارة المحتوى والقوالب والبيانات بطريقة سهلة ومنظمة.",
+                    "url": "#"
+                },
+                {
+                    "title": "موقع شركة تعريفي",
+                    "description": "موقع تعريفي حديث يعرض خدمات الشركة، المميزات، وطرق التواصل بشكل احترافي.",
+                    "url": "#"
+                }
+            ],
+            "itemFields": [
+                {
+                    "key": "title",
+                    "label": "عنوان المشروع",
+                    "type": "text",
+                    "required": true,
+                    "placeholder": "مثال: منصة دعوات رقمية",
+                    "maxLength": 80
+                },
+                {
+                    "key": "description",
+                    "label": "وصف المشروع",
+                    "type": "textarea",
+                    "required": true,
+                    "placeholder": "اكتب وصف مختصر للمشروع",
+                    "maxLength": 220
+                },
+                {
+                    "key": "url",
+                    "label": "رابط المشروع",
+                    "type": "url",
+                    "required": false,
+                    "placeholder": "https://example.com"
+                }
+            ]
         },
         {
             "key": "contactTitle",
