@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{fullName}} - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="portfolio-premium-site">
+
+        <section class="portfolio-hero">
+            <div class="hero-orb orb-one"></div>
+            <div class="hero-orb orb-two"></div>
+            <div class="hero-orb orb-three"></div>
+
+            <div class="floating-shape shape-one">✦</div>
+            <div class="floating-shape shape-two">◆</div>
+            <div class="floating-shape shape-three">✧</div>
+
+            <div class="portfolio-shell">
+
+                <div class="hero-profile">
+                    <div class="profile-frame">
+                        <div class="profile-glow"></div>
+
+                        <div class="profile-avatar">
+                            <span>{{icon}}</span>
+                        </div>
+
+                        <div class="status-pill">
+                            <span></span>
+                            متاح للعمل
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <span class="top-label">Personal Portfolio</span>
+
+                    <h1>{{fullName}}</h1>
+
+                    <h2>{{role}}</h2>
+
+                    <p class="tagline">
+                        {{tagline}}
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="main-btn" href="#projects">
+                            عرض الأعمال
+                        </a>
+
+                        <a class="ghost-btn" href="{{cvUrl}}" target="_top" rel="noopener noreferrer">
+                            تحميل السيرة الذاتية
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="{{githubUrl}}" target="_top" rel="noopener noreferrer">GitHub</a>
+                        <a href="{{linkedinUrl}}" target="_top" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:{{email}}">Email</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <strong>{{experience}}</strong>
+                    <span>سنوات خبرة</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>{{projectsCount}}</strong>
+                    <span>مشروع مكتمل</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>{{clientsCount}}</strong>
+                    <span>عميل سعيد</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="section-heading">
+                <span>نبذة شخصية</span>
+                <h2>من أنا؟</h2>
+                <p>
+                    تعرف أكثر على خبراتي وطريقة عملي وما أستطيع تقديمه.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">{{icon}}</div>
+
+                <p>
+                    {{about}}
+                </p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="section-heading">
+                <span>المهارات</span>
+                <h2>الأدوات والتقنيات</h2>
+                <p>
+                    مجموعة من المهارات التي أستخدمها لبناء حلول رقمية احترافية.
+                </p>
+            </div>
+
+            <div class="skills-card">
+                <p>{{skills}}</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-heading">
+                <span>الأعمال</span>
+                <h2>مشاريع مختارة</h2>
+                <p>
+                    نماذج من الأعمال والمشاريع التي تعكس الخبرة وجودة التنفيذ.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>{{projectOneTitle}}</h3>
+                    <p>{{projectOneDesc}}</p>
+
+                    <a href="{{projectOneUrl}}" target="_top" rel="noopener noreferrer">
+                        مشاهدة المشروع
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>{{projectTwoTitle}}</h3>
+                    <p>{{projectTwoDesc}}</p>
+
+                    <a href="{{projectTwoUrl}}" target="_top" rel="noopener noreferrer">
+                        مشاهدة المشروع
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>{{projectThreeTitle}}</h3>
+                    <p>{{projectThreeDesc}}</p>
+
+                    <a href="{{projectThreeUrl}}" target="_top" rel="noopener noreferrer">
+                        مشاهدة المشروع
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-card">
+                <span>تواصل معي</span>
+
+                <h2>{{contactTitle}}</h2>
+
+                <p>
+                    {{contactMessage}}
+                </p>
+
+                <div class="contact-info">
+                    <a href="mailto:{{email}}">📧 {{email}}</a>
+                    <a href="tel:{{phone}}">📱 {{phone}}</a>
+                    <strong>📍 {{location}}</strong>
+                </div>
+
+                <a class="main-btn contact-btn" href="{{portfolioUrl}}" target="_top" rel="noopener noreferrer">
+                    زيارة موقعي
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
