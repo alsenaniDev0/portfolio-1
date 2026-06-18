@@ -137,23 +137,19 @@
 
             <div class="projects-grid">
 
-                <div class="projects-grid">
+                {{#each projects}}
+                <article class="project-card">
+                    <div class="project-number">{{number}}</div>
 
-                    {{#each projects}}
-                    <article class="project-card">
-                        <div class="project-number">{{number}}</div>
+                    <h3>{{title}}</h3>
 
-                        <h3>{{title}}</h3>
+                    <p>{{description}}</p>
 
-                        <p>{{description}}</p>
-
-                        <a href="{{url}}" target="_top" rel="noopener noreferrer">
-                            مشاهدة المشروع
-                        </a>
-                    </article>
-                    {{/each}}
-
-                </div>
+                    <a href="{{url}}" target="_top" rel="noopener noreferrer">
+                        مشاهدة المشروع
+                    </a>
+                </article>
+                {{/each}}
 
             </div>
         </section>
